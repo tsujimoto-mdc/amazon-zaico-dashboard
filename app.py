@@ -36,7 +36,7 @@ from zaico_core import (
 # ============================================================
 st.set_page_config(
     page_title="Amazon納品分 ZAICO在庫数 自動確認",
-    page_icon="📦",
+    page_icon="🧮",
     layout="wide",
 )
 
@@ -60,7 +60,7 @@ def check_password() -> bool:
     if st.session_state.get("password_correct"):
         return True
 
-    st.title("📦 Amazon納品分 ZAICO在庫数 自動確認")
+    st.title("🧮 Amazon納品分 ZAICO在庫数 自動確認")
     st.text_input(
         "合言葉を入力してください",
         type="password",
@@ -91,7 +91,7 @@ def main():
     if not check_password():
         return
 
-    st.title("📦 Amazon納品分 ZAICO在庫数 自動確認")
+    st.title("🧮 Amazon納品分 ZAICO在庫数 自動確認")
     st.caption(
         "Amazonの納品プランExcelと、ZAICOのダウンロードCSVをアップロードして「実行」を押すと、"
         "「本社ZAICO / 3FZAICO」列を追記したExcelがダウンロードできます。"
